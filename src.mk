@@ -193,7 +193,6 @@ LIB_SOURCES =                                                   \
   utilities/merge_operators/string_append/stringappend2.cc      \
   utilities/merge_operators/uint64add.cc                        \
   utilities/merge_operators/bytesxor.cc                         \
-  utilities/merge_operators/bytesappend.cc                      \
   utilities/option_change_migration/option_change_migration.cc  \
   utilities/options/options_util.cc                             \
   utilities/persistent_cache/block_cache_tier.cc                \
