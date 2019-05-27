@@ -32,10 +32,6 @@ bool StringAppendOperator::Merge(const Slice& /*key*/,
   if (!existing_value) {
     // No existing_value. Set *new_value = value
     new_value->assign(value.data(),value.size());
-  } else if (delim_ == 0) {
-    new_value->reserve(existing_value->size() + value.size());
-    new_value->assign(existing_value->data(),existing_value->size());
-    new_value->append(value.data(), value.size());
   } else {
     // Generic append (existing_value != null).
     // Reserve *new_value to correct size, and apply concatenation.
